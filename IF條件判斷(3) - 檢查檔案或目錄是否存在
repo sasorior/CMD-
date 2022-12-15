@@ -1,0 +1,11 @@
+用法:
+IF EXIST 檔案 (命令1) ELSE (命令2)
+
+例如要檢查電腦有沒有執行過Windows Update，可以檢查Windows安裝的目錄（用%WINDIR%環境變數來表示）是否存在WindowsUpdate.log：
+
+指令:
+IF EXIST %WINDIR%\WindowsUpdate.log (
+ECHO 有執行過 Windows Update
+) ELSE (
+ECHO 沒執行過 Windows Update
+)
