@@ -1,0 +1,24 @@
+1.用SET設定的變數是全域變數，使用SETLOCAL來指定開始設定區域變數，用ENDLOCAL來結束設定區域變數。
+
+指令:
+SETLOCAL
+SET HELLO=您好！
+ECHO %HELLO%
+ENDLOCAL
+ECHO %HELLO%
+
+結果:
+C:\>SETLOCAL
+
+C:\>SET HELLO=您好！
+
+C:\>ECHO 您好！
+您好！
+
+C:\>ENDLOCAL
+
+C:\>ECHO
+ECHO 已啟動。
+
+#如果直接在[命令提示字元]視窗使用SETLOCAL跟ENDLOCAL來定義區域變數，
+會發現這些自訂的區域變數根本就是全域變數，所以區域變數要在批次檔內使用，才能發揮應有的效果。
