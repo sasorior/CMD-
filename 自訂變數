@@ -1,0 +1,19 @@
+1.用[SET]來自訂變數
+指令:
+SET Hello=你好!
+ECHO %HELLO%
+結果:
+您好！
+
+2.自訂變數的內容被宣告之後，事後還是可以被更改。
+指令:
+SET HELLO=大家好！
+結果:
+ECHO %HELLO%
+
+3.要怎麼刪除先前自訂的變數 HELLO，並確認是否真的刪除成功了。
+指令:
+SET Hello=
+ECHO %HELLO%
+結果:
+%HELLO%

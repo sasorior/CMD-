@@ -1,2 +1,0 @@
-# CMD-Note
-NOTE
