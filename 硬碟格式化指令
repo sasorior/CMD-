@@ -1,0 +1,7 @@
+diskpart  #開啟diskpart介面
+
+list disk  #磁碟清單
+sel disk 0  #選擇磁碟0
+clean  #清空磁碟0
+
+exit  #離開
