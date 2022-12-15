@@ -1,0 +1,17 @@
+ipconfig /all  #電腦名稱、ip查詢
+systeminfo  #系統資訊
+systeminfo /s ip  #遠端查看電腦資訊
+whoami  #使用者帳號查詢
+sfc /scannow  #系統掃描(以系統管理員執行)
+w32tm /resync  #校時時間
+w32tm /query /status  #查詢校時伺服器
+
+CD  #切換資料夾位置
+CD\  #進到根目錄, 不管目前在哪個位置
+CD..  #回到上一層
+CLS  #清除螢幕
+
+arp -a  #查詢網段下IP、MAC
+tracert ip  #查詢路由路徑
+
+#中文亂碼，將批次檔存為ANSI格式
